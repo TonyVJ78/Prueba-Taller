@@ -5,88 +5,97 @@
     box-sizing: border-box;
 }
 
-/* Fondo oscuro animado */
+/* Body */
 body {
     font-family: 'Courier New', monospace;
-    background: radial-gradient(circle, #000000, #1a0000);
-    color: #ff4d4d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* Efecto parpadeo */
-@keyframes flicker {
-    0% { opacity: 1; }
-    50% { opacity: 0.4; }
-    100% { opacity: 1; }
-}
-
-/* Overlay oscuro */
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
-    opacity: 0.3;
-}
-
-/* Contenedor */
-.container {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0 0 25px red;
-    animation: flicker 2s infinite;
+    background: #0a0a0a;
+    color: #e60000;
 }
 
 /* Header */
-header h1 {
-    font-size: 3em;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
+header {
+    background: black;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid red;
 }
 
-header p {
-    font-size: 1.3em;
-    margin-bottom: 30px;
+nav a {
+    color: #e60000;
+    margin: 0 15px;
+    text-decoration: none;
 }
 
-/* Icono */
-.icon {
-    width: 100px;
+nav a:hover {
+    text-shadow: 0 0 10px red;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: radial-gradient(circle, #1a0000, black);
+}
+
+/* Categorías */
+#categorias {
+    padding: 50px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #1a0000;
+    padding: 20px;
+    border: 1px solid red;
+    width: 150px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 15px red;
+}
+
+/* Historias */
+#historias {
+    padding: 50px;
+}
+
+.story {
+    background: #111;
+    padding: 20px;
     margin-bottom: 20px;
-    filter: grayscale(100%) brightness(0.7);
+    border-left: 3px solid red;
 }
 
-/* Texto */
-main p {
-    margin: 20px 0;
-    font-size: 1.2em;
+.story h3 {
+    margin-bottom: 10px;
 }
 
 /* Botón */
 button {
-    padding: 12px 25px;
-    font-size: 1em;
-    background-color: #330000;
-    color: #ff4d4d;
-    border: 1px solid #ff0000;
-    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: black;
+    color: red;
+    border: 1px solid red;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #660000;
-    box-shadow: 0 0 15px red;
+    background: red;
+    color: black;
 }
 
 /* Footer */
 footer {
-    margin-top: 30px;
-    font-size: 0.9em;
-    color: #999;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid red;
 }
