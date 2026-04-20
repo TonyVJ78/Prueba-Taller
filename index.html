@@ -3,34 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>No debiste entrar...</title>
+    <title>Relatos Oscuros de Santa Cruz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="overlay"></div>
 
-    <div class="container">
-        <header>
-            <h1>NO DEBISTE ENTRAR</h1>
-            <p>Algo te está observando...</p>
-        </header>
+    <header>
+        <h1>Relatos Oscuros de Santa Cruz</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#categorias">Categorías</a>
+            <a href="#historias">Historias</a>
+        </nav>
+    </header>
 
-        <main>
-            <img src="https://cdn-icons-png.flaticon.com/512/616/616554.png" alt="Calavera" class="icon">
-            <p>Ya es demasiado tarde para salir...</p>
-            <button onclick="mensajeTerror()">NO HAGAS CLIC</button>
-        </main>
+    <section id="inicio" class="hero">
+        <h2>No todo en Santa Cruz es lo que parece...</h2>
+        <p>Historias que nadie se atreve a contar en voz alta.</p>
+    </section>
 
-        <footer>
-            <p>© 2026 ¿Sigues aquí?</p>
-        </footer>
-    </div>
+    <section id="categorias">
+        <h2>Categorías</h2>
+        <div class="cards">
+            <div class="card">👻 Apariciones</div>
+            <div class="card">🌲 Lugares Malditos</div>
+            <div class="card">🩸 Leyendas Urbanas</div>
+        </div>
+    </section>
+
+    <section id="historias">
+        <h2>Historias de Terror</h2>
+
+        <div class="story">
+            <h3>La Sombra del Parque Urbano</h3>
+            <p>Dicen que en el parque, cuando cae la noche, una figura alta observa desde los árboles. 
+            Nadie la ha visto de cerca… los que lo intentaron, no volvieron igual.</p>
+            <button onclick="mostrarAlerta()">Leer más</button>
+        </div>
+
+        <div class="story">
+            <h3>El Susurro de la Avenida Banzer</h3>
+            <p>Conductores aseguran escuchar voces cuando manejan solos de madrugada. 
+            Algunos dicen que alguien susurra su nombre desde el asiento trasero.</p>
+            <button onclick="mostrarAlerta()">Leer más</button>
+        </div>
+
+        <div class="story">
+            <h3>La Casa Abandonada del Centro</h3>
+            <p>Una vieja casa olvidada… luces que se encienden solas… y una silueta en la ventana 
+            que observa a quienes pasan.</p>
+            <button onclick="mostrarAlerta()">Leer más</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Relatos Oscuros - Santa Cruz</p>
+    </footer>
 
     <script>
-        function mensajeTerror() {
-            alert("Te encontré...");
-            document.body.style.background = "black";
+        function mostrarAlerta() {
+            alert("No deberías seguir leyendo...");
         }
     </script>
+
 </body>
 </html>
