@@ -4,68 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relatos Oscuros de Santa Cruz</title>
+
+    <!-- Fuente terror -->
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Relatos Oscuros de Santa Cruz</h1>
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#categorias">Categorías</a>
-            <a href="#historias">Historias</a>
-        </nav>
-    </header>
+<header>
+    <h1>Relatos Oscuros</h1>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#historias">Historias</a>
+    </nav>
+</header>
 
-    <section id="inicio" class="hero">
-        <h2>No todo en Santa Cruz es lo que parece...</h2>
-        <p>Historias que nadie se atreve a contar en voz alta.</p>
-    </section>
+<section id="inicio" class="hero">
+    <h2>Santa Cruz… pero en la oscuridad</h2>
+    <p>Historias que susurran cuando cae la noche</p>
+</section>
 
-    <section id="categorias">
-        <h2>Categorías</h2>
-        <div class="cards">
-            <div class="card">👻 Apariciones</div>
-            <div class="card">🌲 Lugares Malditos</div>
-            <div class="card">🩸 Leyendas Urbanas</div>
-        </div>
-    </section>
+<section id="categorias">
+    <h2>Categorías</h2>
+    <div class="cards">
+        <div class="card">👻 Apariciones</div>
+        <div class="card">🌲 Lugares Malditos</div>
+        <div class="card">🩸 Leyendas Urbanas</div>
+    </div>
+</section>
 
-    <section id="historias">
-        <h2>Historias de Terror</h2>
+<section id="historias">
+    <h2>Historias</h2>
 
+    <div class="grid">
         <div class="story">
-            <h3>La Sombra del Parque Urbano</h3>
-            <p>Dicen que en el parque, cuando cae la noche, una figura alta observa desde los árboles. 
-            Nadie la ha visto de cerca… los que lo intentaron, no volvieron igual.</p>
-            <button onclick="mostrarAlerta()">Leer más</button>
-        </div>
-
-        <div class="story">
-            <h3>El Susurro de la Avenida Banzer</h3>
-            <p>Conductores aseguran escuchar voces cuando manejan solos de madrugada. 
-            Algunos dicen que alguien susurra su nombre desde el asiento trasero.</p>
-            <button onclick="mostrarAlerta()">Leer más</button>
+            <h3>La Sombra del Parque</h3>
+            <p>Algo se mueve entre los árboles cuando nadie mira…</p>
+            <button onclick="alert('Te está observando...')">Leer</button>
         </div>
 
         <div class="story">
-            <h3>La Casa Abandonada del Centro</h3>
-            <p>Una vieja casa olvidada… luces que se encienden solas… y una silueta en la ventana 
-            que observa a quienes pasan.</p>
-            <button onclick="mostrarAlerta()">Leer más</button>
+            <h3>El Susurro Nocturno</h3>
+            <p>Una voz llama tu nombre en la madrugada…</p>
+            <button onclick="alert('Escúchalo con atención...')">Leer</button>
         </div>
 
-    </section>
+        <div class="story">
+            <h3>La Casa Sin Luz</h3>
+            <p>Luces que se encienden… pero nadie vive ahí.</p>
+            <button onclick="alert('No entres...')">Leer</button>
+        </div>
+    </div>
 
-    <footer>
-        <p>© 2026 Relatos Oscuros - Santa Cruz</p>
-    </footer>
+</section>
 
-    <script>
-        function mostrarAlerta() {
-            alert("No deberías seguir leyendo...");
-        }
-    </script>
+<footer>
+    <p>© 2026 Relatos Oscuros</p>
+</footer>
 
 </body>
 </html>
